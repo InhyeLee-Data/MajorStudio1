@@ -55,7 +55,6 @@ drawIrisData();
 // Feel free to add additional CSS properties in index.html, or using JavaScript, as you see fit.
 
 function drawIrisData2() {
-// (2) Fetch Data
   fetch("./iris_json.json")
     .then(data => data.json()) // returned the value from fetched data
     .then(data => {
