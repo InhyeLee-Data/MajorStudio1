@@ -140,7 +140,7 @@ function drawIrisData2() {
       document.body.appendChild(svg);
 
 
-      // (7) This is  Additional: Add some variance for each item 
+      // (7) This is  Additional. Just for Fun: Add some variance for each item 
       const angle = i * (360 / (data.length * Math.random(1)) ) ;
       // const angle = i * (360 / (data.length))  ;
       svg.setAttribute('transform', `rotate(${angle})`); 
