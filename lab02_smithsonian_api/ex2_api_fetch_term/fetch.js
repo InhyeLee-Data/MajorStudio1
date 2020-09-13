@@ -23,9 +23,10 @@ function fetchTermsData(termCategory) {
   }
 
   fetchTermsData("data_source");
+  // fetchTermsData("topic");
 // fetchTermsData("online_media_type");
 // fetchTermsData("culture");
-
+// fetchTermsData("unit_code");
 /*
 Task: Play around with the different categories listed here:
 http://edan.si.edu/openaccess/apidocs/#api-search-terms
@@ -41,6 +42,9 @@ fetchTermsData("culture");
  => 4265
 
 (3) What acronyms for museums are there?
-fetchTermsData("data_source");
-=> NMNH, 
+:  fetchTermsData("data_source"); => Only shows NMNH, 
+In fact, unit_code seems to show the museum acronyms
+=> There are 34 acronyms
+["AAA", "AAA TH", "ACM", "CFCHFOLKLIFE", "CHNDM", "FBR", "FSG", "HAC", "HMSG", "HSFA", "NAA", "NASM", "NMAAHC", "NMAH", "NMAI", "NMAfA", "NMNHANTHRO", "NMNHBIRDS", "NMNHBOTANY", "NMNHEDUCATION", "NMNHENTO", "NMNHFISHES", "NMNHHERPS", "NMNHINV", "NMNHMAMMALS", "NMNHMINSCI", "NMNHPALEO", "NPG", "NPM", "NZP", "SAAM", "SI", "SIA", "SIL"]
+
 */
