@@ -1,0 +1,159 @@
+html {
+    font-family: helvetica, san-serif;
+}
+body {
+    margin:0; padding: 35px;
+}
+
+#introduction {
+    padding: 1rem 1rem; 
+    margin:0;
+    
+}
+#introduction {
+/* //display: flex; */
+    width: 70rem;
+    margin: 0 auto;
+    color: #1b065e;
+    font-size: 45px;
+    line-height: 1.3;
+    font-family: 'National 2 Narrow Web';
+    /* width: 95%; */
+    padding-bottom: 5rem;
+}
+
+#vis_total {
+    width: 70rem;
+}
+#vis_decade {
+    width: 70rem;
+    margin: 0 auto;
+}
+#vis_decade_legend {
+    width: 20rem;
+    height: 2.5rem;
+}
+
+h2 {
+  /* //  font-family: 'Roboto', serif ; */
+    font-size: 5rem;
+    text-align: center;
+    font-weight: 500; 
+    text-transform:uppercase;
+    display: block;
+    color: #000000;
+    
+}
+
+.description{
+   /* // display: block; */
+   /* font-family: 'Roboto', serif ; */
+   font-size: 19px;
+    /* min-width: 800px;
+    max-width: 800px; */
+    padding: 0; margin:0;
+    padding-top: 55px;
+    color: #707070;
+}
+
+.emphasis {
+    color: #000000;
+    opacity: 0.75;
+    font-weight: 900;
+    
+}
+.female, .male {
+    text-transform:uppercase;
+    padding: 0 10px;
+    stroke: solid 1px #707070 ;
+}
+.female {
+    background:#E6E634 ;
+    color: #000000;
+}
+.male {
+    background: #329191;
+    color: #FFF;
+}
+
+/* unvisited link */
+a:link {
+    color:#329191;
+   // text-decoration: dashed;
+
+  }
+  
+  /* visited link */
+  a:visited {
+    color :#329191;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color:#E6E634;
+  }
+  
+  /* selected link */
+  a:active {
+    color:#E6E634;
+  }
+
+
+.container {
+    /* display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;  */
+    padding: 0.75rem 0;
+    
+}
+
+@font-face {
+    font-family: 'National 2 Narrow Web';
+    src: url('../assets/National2NarrowWeb-Regular.woff2') format('woff2'),
+    url('../assets/National2NarrowWeb-Regular.woff2') format('woff');
+    font-stretch: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Octopus Narrow 300';
+    src: url('../assets/octopus_narrow_300-webfont.woff') format('woff'),
+    url('../assets/octopus_narrow_300-webfont.woff') format('woff');
+    font-stretch: normal;
+   
+}
+.vis_text {
+       padding:0;
+       margin: 0 auto; 
+       text-align: center;
+       margin-bottom:30px; 
+}
+.vis_text h3{
+    max-width: 70rem;
+    text-align: center;
+    color: #C34343;
+    /* text-transform:uppercase; */
+    font-size:3rem;
+    font-family:'National 2 Narrow Web';
+    margin:0; padding:0;
+    margin-bottom: 10px;
+    
+}
+
+.info {margin:0;
+       /* /top:10.00381679389313vh; */
+       z-index:1;font-size:15px;
+       font-family:'National 2 Narrow Web';
+       
+}
+.right {
+    text-align: right;
+}
+.yearText {
+    font-family:'Octopus Narrow 300', sans-serif;
+}
+
+.genderTotal {
+    width: 70rem;
+}
