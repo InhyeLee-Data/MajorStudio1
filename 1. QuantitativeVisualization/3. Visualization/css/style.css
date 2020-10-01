@@ -79,7 +79,7 @@ h2 {
 /* unvisited link */
 a:link {
     color:#329191;
-   // text-decoration: dashed;
+    text-decoration: none;
 
   }
   
@@ -129,10 +129,10 @@ a:link {
        text-align: center;
        margin-bottom:30px; 
 }
-.vis_text h3{
+.vis_text h2{
     max-width: 70rem;
     text-align: center;
-    color: #C34343;
+    //color: #C34343;
     /* text-transform:uppercase; */
     font-size:3rem;
     font-family:'National 2 Narrow Web';
@@ -145,6 +145,7 @@ a:link {
        /* /top:10.00381679389313vh; */
        z-index:1;font-size:15px;
        font-family:'National 2 Narrow Web';
+       opacity: 0.8
        
 }
 .right {
