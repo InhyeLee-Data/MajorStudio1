@@ -294,16 +294,16 @@ function displayBarGraph(){
                 });
 
                 // OPEN UP an external Page - Not working yet - Should work on click (mouse activated)
-                container
-                .selectAll('rect')
-                .on('click', function(d) {
-                    console.log('open tab')
-                    window.open(
+//                 container
+//                 .selectAll('rect')
+//                 .on('click', function(d) {
+//                     console.log('open tab')
+//                     window.open(
                        
-                    //  'http://en.wikipedia.org', // Link outside...
-                      '_blank' // <- This is what makes it open in a new window.
-                    );
-                  })
+//                     //  'http://en.wikipedia.org', // Link outside...
+//                       '_blank' // <- This is what makes it open in a new window.
+//                     );
+//                   })
 
             // TEXT ON TOP => Done in html
             // d3.select('#vis_decade')
