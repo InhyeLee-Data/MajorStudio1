@@ -22,8 +22,28 @@ function analyzeData() {
     let height = n.width_height[1]; 
     let dim = width * height; 
     let gender = n.gender;
-    let imgURL = n.imageLink;   //console.log(year); // Check the year
+
+    // Logic to Rewrite image link:
+    // Structure Change:
+    //   https://ids.si.edu/ids/deliveryService?id=NPG-7000004A_1
+    //   https://ids.si.edu/ids/iiif/NPG-7000004A_1/full/150,/0/default.jpg
+    /*
+    (1) deliveryService?id= => iiif/
+    (2) Add: /full/150,/0/default.jpg at the end
+    */
+   let imgURL;
+    if (n.imageLink !="") {
+        let myStr1 = n.imageLink;
+        let myStr2 = "/full/150,/0/default.jpg"
+        myStr1 = myStr1.replace("deliveryService?id=", "iiif/");
+        imgURL = myStr1.concat(myStr2);
+        console.log(imgURL);
+    } else {
+        imgURL = n.imageLink;
+    }
+   // let imgURL = n.imageLink;   //console.log(year); // Check the year
     let pageURL = n.link; // page Link
+    let groupShot = n.groupShot; // Is this a group shot?
     let match = false; // Check if we already have the entry
 
     // see if the work already exists the allTitles array = Triple Checker
@@ -32,8 +52,18 @@ function analyzeData() {
           match=true;
         }
     })
+    // allTitles.forEach(function(p){
+    //     if (groupShot) { //&& p.year == year && p.dim == dim
+    //      console.log("I am a groupshot ")
+    //     }
+    //     else {
+    //         console.log("I am not a groupshot ")
+    //     }
+    // })
 
-    if (!match && year > 0 && height && width && dim) { //519 => 507
+    if (!groupShot && !match && year > 0 && height && width && dim) { 
+        //519 => 507, after !match,  & dim
+        // a new field entered for groupShot to exclude group pictures
         allTitles.push({
                 title: title,
                 year: year,
@@ -42,7 +72,8 @@ function analyzeData() {
                 dim: dim,
                 gender: gender,
                 imgURL: imgURL,
-                pageURL: pageURL
+                pageURL: pageURL,
+                groupShot: groupShot
         });
     } 
   });   
@@ -96,7 +127,9 @@ function displayStat() {
 
            vis_total.selectAll('rect')
                 .data(genderStat)
-                .join('rect')
+                .enter()
+                .append("rect")
+                // .join('rect')
                 .attr('x', (d,i) => {
 
                     //let entireDim = d3.sum(genderStat, d => d);
@@ -197,7 +230,12 @@ function displayBarGraph(){
             container.append('g')
                 .selectAll('rect')
                 .data(myArray)
-                .join('rect')
+                .enter()
+                .append("rect")
+                .attr("id", (d) =>{
+                    return d.pageURL; 
+                }) // id, unique serial number
+                //.join('rect')
                 .attr('x', (d,i) => {
                     let prevTitles = myArray.slice(0, i);
                     let xPos; 
@@ -294,16 +332,16 @@ function displayBarGraph(){
                 });
 
                 // OPEN UP an external Page - Not working yet - Should work on click (mouse activated)
-//                 container
-//                 .selectAll('rect')
-//                 .on('click', function(d) {
-//                     console.log('open tab')
-//                     window.open(
+                container
+                .selectAll('rect')
+                .on('click', function(d) {
+                    console.log('open tab')
+                    window.open(
                        
-//                     //  'http://en.wikipedia.org', // Link outside...
-//                       '_blank' // <- This is what makes it open in a new window.
-//                     );
-//                   })
+                    //  'http://en.wikipedia.org', // Link outside...
+                      '_blank' // <- This is what makes it open in a new window.
+                    );
+                  })
 
             // TEXT ON TOP => Done in html
             // d3.select('#vis_decade')
