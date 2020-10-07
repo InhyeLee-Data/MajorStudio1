@@ -34,7 +34,7 @@ function analyzeData() {
    let imgURL;
     if (n.imageLink !="") {
         let myStr1 = n.imageLink;
-        let myStr2 = "/full/150,/0/default.jpg"
+        let myStr2 = "/full/50,/0/default.jpg"
         myStr1 = myStr1.replace("deliveryService?id=", "iiif/");
         imgURL = myStr1.concat(myStr2);
         console.log(imgURL);
@@ -275,11 +275,11 @@ function displayBarGraph(){
                     if (myIMG){ // If there is an image
                         // BG
                         d3.select(this)
-                            .transition()
-                            .duration(100)
+                            // .transition()
+                            // .duration(100)
                             .attr("opacity","0.2")
-                            .transition()
-                            .duration(100)
+                            // .transition()
+                            // .duration(100)
                             .style('fill', d => {
                                 if (d.gender === "female") {
                                     return "#E6E634";
@@ -288,7 +288,7 @@ function displayBarGraph(){
                                     return "#329191";
                                 }
                             })
-                            .attr("opacity","0.5")  
+                           .attr("opacity","0.5")  
                             .attr('stroke',  d => {
                                 if (d.gender === "female") {
                                     return "#E6E634";
@@ -297,8 +297,9 @@ function displayBarGraph(){
                                     return "#329191";
                                 }
                             })
+                            .attr('stroke-width', '3')
                             .attr("opacity","1") 
-                            // "#707070"  
+
                         // Show IMG
                         container.append('image')
                             .attr('xlink:href', myIMG)
@@ -332,16 +333,16 @@ function displayBarGraph(){
                 });
 
                 // OPEN UP an external Page - Not working yet - Should work on click (mouse activated)
-                container
-                .selectAll('rect')
-                .on('click', function(d) {
-                    console.log('open tab')
-                    window.open(
+                // container
+                // .selectAll('rect')
+                // .on('click', function(d) {
+                //     console.log('open tab')
+                //     window.open(
                        
-                    //  'http://en.wikipedia.org', // Link outside...
-                      '_blank' // <- This is what makes it open in a new window.
-                    );
-                  })
+                //     //  'http://en.wikipedia.org', // Link outside...
+                //       '_blank' // <- This is what makes it open in a new window.
+                //     );
+                //   })
 
             // TEXT ON TOP => Done in html
             // d3.select('#vis_decade')
