@@ -22,26 +22,20 @@ function analyzeData() {
     let height = n.width_height[1]; 
     let dim = width * height; 
     let gender = n.gender;
+    let imgURL = n.imageLink;   //console.log(year); // Check the year
 
-    // Logic to Rewrite image link:
-    // Structure Change:
-    //   https://ids.si.edu/ids/deliveryService?id=NPG-7000004A_1
-    //   https://ids.si.edu/ids/iiif/NPG-7000004A_1/full/150,/0/default.jpg
-    /*
-    (1) deliveryService?id= => iiif/
-    (2) Add: /full/150,/0/default.jpg at the end
-    */
-   let imgURL;
-    if (n.imageLink !="") {
-        let myStr1 = n.imageLink;
-        let myStr2 = "/full/50,/0/default.jpg"
-        myStr1 = myStr1.replace("deliveryService?id=", "iiif/");
-        imgURL = myStr1.concat(myStr2);
-        console.log(imgURL);
+    // Now, images are in a local folder;
+    // Remove everything except for the file name
+    // Only do the following when there is an image URL
+    if (imgURL) {
+        imgURL = imgURL.replace("https://ids.si.edu/ids/deliveryService?id=", "");
+        imgURL = './images/' + imgURL +".jpg";
     } else {
-        imgURL = n.imageLink;
+        imgURL = "";
     }
-   // let imgURL = n.imageLink;   //console.log(year); // Check the year
+
+   
+    
     let pageURL = n.link; // page Link
     let groupShot = n.groupShot; // Is this a group shot?
     let match = false; // Check if we already have the entry
@@ -275,11 +269,11 @@ function displayBarGraph(){
                     if (myIMG){ // If there is an image
                         // BG
                         d3.select(this)
-                            // .transition()
-                            // .duration(100)
+                            .transition()
+                            .duration(100)
                             .attr("opacity","0.2")
-                            // .transition()
-                            // .duration(100)
+                            .transition()
+                            .duration(100)
                             .style('fill', d => {
                                 if (d.gender === "female") {
                                     return "#E6E634";
@@ -288,7 +282,7 @@ function displayBarGraph(){
                                     return "#329191";
                                 }
                             })
-                           .attr("opacity","0.5")  
+                            .attr("opacity","0.5")  
                             .attr('stroke',  d => {
                                 if (d.gender === "female") {
                                     return "#E6E634";
@@ -297,9 +291,8 @@ function displayBarGraph(){
                                     return "#329191";
                                 }
                             })
-                            .attr('stroke-width', '3')
                             .attr("opacity","1") 
-
+                            // "#707070"  
                         // Show IMG
                         container.append('image')
                             .attr('xlink:href', myIMG)
@@ -333,16 +326,16 @@ function displayBarGraph(){
                 });
 
                 // OPEN UP an external Page - Not working yet - Should work on click (mouse activated)
-                // container
-                // .selectAll('rect')
-                // .on('click', function(d) {
-                //     console.log('open tab')
-                //     window.open(
+                container
+                .selectAll('rect')
+                .on('click', function(d) {
+                    console.log('open tab')
+                    window.open(
                        
-                //     //  'http://en.wikipedia.org', // Link outside...
-                //       '_blank' // <- This is what makes it open in a new window.
-                //     );
-                //   })
+                    //  'http://en.wikipedia.org', // Link outside...
+                      '_blank' // <- This is what makes it open in a new window.
+                    );
+                  })
 
             // TEXT ON TOP => Done in html
             // d3.select('#vis_decade')
