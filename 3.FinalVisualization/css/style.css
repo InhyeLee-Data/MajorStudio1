@@ -1,0 +1,193 @@
+html {
+    font-family: helvetica, san-serif;
+}
+body {
+   /* margin:0; padding: 35px; */
+   /* overflow: hidden; */
+   background-color: #fff;
+}
+
+h2 {
+  /* //  font-family: 'Roboto', serif ; */
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: 500; 
+    text-transform:uppercase;
+    display: block;
+    color: #000000;
+    
+}
+
+.painting {
+  cursor: pointer;
+}
+
+div.tooltip, div.stattip {	
+    position: absolute;
+    text-align: left;
+    width: auto;
+    height: auto;
+    padding: 8px;
+    font: 12px sans-serif;
+    background: #ddd;
+    pointer-events: none;		
+}
+
+div.stattip {	
+  background: #fff;
+}
+
+
+.description{
+   /* // display: block; */
+   /* font-family: 'Roboto', serif ; */
+   font-size: 19px;
+    /* min-width: 800px;
+    max-width: 800px; */
+    padding: 0; margin:0;
+    padding-top: 55px;
+    color: #707070;
+}
+
+.emphasis {
+    color: #000000;
+    opacity: 0.75;
+    font-weight: 900;
+    
+}
+.female, .male {
+    text-transform:uppercase;
+    padding: 0 10px;
+    stroke: solid 1px #707070 ;
+}
+.female {
+    background: #f1ce4a ;
+    color: #000000;
+}
+.male {
+    background: #4290c6;
+    color: #FFF;
+}
+
+/* unvisited link */
+a:link {
+    color:#4290c6;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color :#4290c6;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #f1ce4a;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #f1ce4a;
+  }
+
+@font-face {
+    font-family: 'National 2 Narrow Web';
+    src: url('../assets/National2NarrowWeb-Regular.woff2') format('woff2'),
+    url('../assets/National2NarrowWeb-Regular.woff2') format('woff');
+    font-stretch: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Octopus Narrow 300';
+    src: url('../assets/octopus_narrow_300-webfont.woff') format('woff'),
+    url('../assets/octopus_narrow_300-webfont.woff') format('woff');
+    font-stretch: normal;
+   
+}
+.vis_text {
+       padding:0;
+       margin: 0 auto; 
+       text-align: center;
+       margin-bottom:30px; 
+}
+.vis_text h2{
+    max-width: 70rem;
+    text-align: center;
+    /* //color: #C34343; */
+    /* text-transform:uppercase; */
+    font-size:3rem;
+    font-family:'National 2 Narrow Web';
+    margin:0; padding:0;
+    margin-bottom: 10px;
+    
+}
+
+.introT {
+  /* font-family:'Octopus Narrow 300', sans-serif; */
+  font-family:'National 2 Narrow Web';
+}
+
+
+.info {margin:0;
+       /* /top:10.00381679389313vh; */
+       z-index:1;font-size:15px;
+       font-family:'National 2 Narrow Web';
+       opacity: 0.8
+       
+}
+.right {
+    text-align: right;
+}
+.yearText, .statText {
+    font-family:'Octopus Narrow 300', sans-serif;
+}
+
+.genderTotal {
+    width: 70rem;
+}
+
+/* 
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+   */
+  .show {display: block;}
+
+#vis_all {
+  padding: 0;
+  margin:0;
+}
