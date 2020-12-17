@@ -1,5 +1,25 @@
-#### Final Visualization 
+### Final Visualization 
+
+#### Title: The Face Value of Portraits
+A Visualization about the number of collections & size differences of portraits with a gender keyword (male and female)
+
+#### Data
+Source -  National Portrait Gallery, Smithsonian Institute.
+507 data points for portrait paintings with dimension information. 
+410 of them have images available via the Smithsonian API.
+
+#### Visual Inspiration
+Salon Style Hanging 
+
+#### Mode: Intro, Salon, Size, Decade, Gender and Estate
+1. Intro  
+2: Salon - This shows the full view of the collection as a salon.
+3: Size - Organize paintings by Size (Large to Small)
+4: Decade - By Decade
+5: Gender - Gender Cloud  
+In each Salon or gallery, you can mouse over the rectangle to reveal some information about the work, and click to see the image of the portrait.
+6: Estate - A small statistical finding about the gender differene in the collection. 
 
 Images:
 
-Demoing Video:
+A Video of Interaction:
