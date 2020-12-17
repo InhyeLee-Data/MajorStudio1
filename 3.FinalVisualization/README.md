@@ -3,6 +3,8 @@
 #### Title: The Face Value of Portraits
 A Visualization about the number of collections & size differences of portraits with a gender keyword (male and female)
 
+#### Link: https://inhyelee-data.github.io/MajorStudio1/3.FinalVisualization/ 
+
 #### Data
 Source -  National Portrait Gallery, Smithsonian Institute.
 507 data points for portrait paintings with dimension information. 
