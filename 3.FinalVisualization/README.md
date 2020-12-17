@@ -19,7 +19,7 @@ Salon Style Hanging
 5. Gender - Gender Cloud  
 6. Estate - A small statistical finding about the gender differene in the collection. 
 
+#### Images
 
-Images:
 
-A Video of Interaction:
+#### A Short Video of Interaction
