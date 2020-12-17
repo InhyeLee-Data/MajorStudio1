@@ -23,6 +23,9 @@ Salon Style Hanging
 
 #### Images
 <img src="https://raw.githubusercontent.com/InhyeLee-Data/MajorStudio1/master/3.FinalVisualization/Documentation/FaceValue1.png" width ="800px">
+<img src="https://raw.githubusercontent.com/InhyeLee-Data/MajorStudio1/master/3.FinalVisualization/Documentation/FaceValue2.png" width ="800px">
+<img src="https://raw.githubusercontent.com/InhyeLee-Data/MajorStudio1/master/3.FinalVisualization/Documentation/FaceValue3.png" width ="800px">
+<img src="https://raw.githubusercontent.com/InhyeLee-Data/MajorStudio1/master/3.FinalVisualization/Documentation/FaceValue4.png" width ="800px">
 
 #### A Short Video of Interaction
 https://youtu.be/praiPTvO8uI 
