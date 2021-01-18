@@ -1,150 +1,130 @@
 html {
-    font-family: helvetica, san-serif;
+  font-family: helvetica, san-serif;
 }
 body {
-   /* margin:0; padding: 35px; */
-   /* overflow: hidden; */
-   background-color: #fff;
+  margin:0; padding: 35px; padding-top:0;
+  overflow: hidden;
+  /* width: 90%; */
+  background-color: #fff;
 }
 
 h2 {
   /* //  font-family: 'Roboto', serif ; */
-    font-size: 1.5rem;
-    text-align: left;
-    font-weight: 500; 
-    text-transform:uppercase;
-    display: block;
-    color: #000000;
-    
+  font-size: 1.5rem;
+  text-align: left;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: block;
+  color: #000000;
 }
 
 .painting {
   cursor: pointer;
 }
 
-div.tooltip, div.stattip {	
-    position: absolute;
-    text-align: left;
-    width: auto;
-    height: auto;
-    padding: 8px;
-    font: 12px sans-serif;
-    background: #ddd;
-    pointer-events: none;		
+div.tooltip,
+div.stattip {
+  position: absolute;
+  text-align: left;
+  width: auto;
+  height: auto;
+  padding: 8px;
+  font: 12px sans-serif;
+  background: #ddd;
+  pointer-events: none;
 }
 
-div.stattip {	
+div.stattip {
   background: #fff;
 }
 
-
-.description{
-   /* // display: block; */
-   /* font-family: 'Roboto', serif ; */
-   font-size: 19px;
-    /* min-width: 800px;
+.description {
+  /* // display: block; */
+  /* font-family: 'Roboto', serif ; */
+  font-size: 19px;
+  /* min-width: 800px;
     max-width: 800px; */
-    padding: 0; margin:0;
-    padding-top: 55px;
-    color: #707070;
+  padding: 0;
+  margin: 0;
+  padding-top: 55px;
+  color: #707070;
 }
 
 .emphasis {
-    color: #000000;
-    opacity: 0.75;
-    font-weight: 900;
-    
+  color: #000000;
+  opacity: 0.75;
+  font-weight: 900;
 }
-.female, .male {
-    text-transform:uppercase;
-    padding: 0 10px;
-    stroke: solid 1px #707070 ;
+.female,
+.male {
+  text-transform: uppercase;
+  padding: 0 10px;
+  stroke: solid 1px #707070;
 }
 .female {
-    background: #f1ce4a ;
-    color: #000000;
+  background: #f1ce4a;
+  color: #000000;
 }
 .male {
-    background: #4290c6;
-    color: #FFF;
-}
-
-/* unvisited link */
-a:link {
-    color:#4290c6;
-    text-decoration: none;
-  }
-  
-  /* visited link */
-  a:visited {
-    color :#4290c6;
-  }
-  
-  /* mouse over link */
-  a:hover {
-    color: #f1ce4a;
-  }
-  
-  /* selected link */
-  a:active {
-    color: #f1ce4a;
-  }
-
-@font-face {
-    font-family: 'National 2 Narrow Web';
-    src: url('../assets/National2NarrowWeb-Regular.woff2') format('woff2'),
-    url('../assets/National2NarrowWeb-Regular.woff2') format('woff');
-    font-stretch: normal;
-    font-display: swap;
+  background: #4290c6;
+  color: #fff;
 }
 
 @font-face {
-    font-family: 'Octopus Narrow 300';
-    src: url('../assets/octopus_narrow_300-webfont.woff') format('woff'),
-    url('../assets/octopus_narrow_300-webfont.woff') format('woff');
-    font-stretch: normal;
-   
+  font-family: "National 2 Narrow Web";
+  src: url("../assets/National2NarrowWeb-Regular.woff2") format("woff2"),
+    url("../assets/National2NarrowWeb-Regular.woff2") format("woff");
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Octopus Narrow 300";
+  src: url("../assets/octopus_narrow_300-webfont.woff") format("woff"),
+    url("../assets/octopus_narrow_300-webfont.woff") format("woff");
+  font-stretch: normal;
 }
 .vis_text {
-       padding:0;
-       margin: 0 auto; 
-       text-align: center;
-       margin-bottom:30px; 
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
 }
-.vis_text h2{
-    max-width: 70rem;
-    text-align: center;
-    /* //color: #C34343; */
-    /* text-transform:uppercase; */
-    font-size:3rem;
-    font-family:'National 2 Narrow Web';
-    margin:0; padding:0;
-    margin-bottom: 10px;
-    
+.vis_text h2 {
+  max-width: 70rem;
+  text-align: center;
+  /* //color: #C34343; */
+  /* text-transform:uppercase; */
+  font-size: 3rem;
+  font-family: "National 2 Narrow Web";
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
 }
 
 .introT {
   /* font-family:'Octopus Narrow 300', sans-serif; */
-  font-family:'National 2 Narrow Web';
+  font-family: "National 2 Narrow Web";
 }
 
-
-.info {margin:0;
-       /* /top:10.00381679389313vh; */
-       z-index:1;font-size:15px;
-       font-family:'National 2 Narrow Web';
-       opacity: 0.8
-       
+.info {
+  margin: 0;
+  /* /top:10.00381679389313vh; */
+  z-index: 1;
+  font-size: 15px;
+  font-family: "National 2 Narrow Web";
+  opacity: 0.8;
 }
 .right {
-    text-align: right;
+  text-align: right;
 }
-.yearText, .statText {
-    font-family:'Octopus Narrow 300', sans-serif;
+.yearText,
+.statText {
+  font-family: "Octopus Narrow 300", sans-serif;
 }
 
 .genderTotal {
-    width: 70rem;
+  width: 70rem;
 }
 
 /* 
@@ -185,9 +165,73 @@ a:link {
   
   .dropdown a:hover {background-color: #ddd;}
    */
-  .show {display: block;}
+.show {
+  display: block;
+}
 
 #vis_all {
   padding: 0;
-  margin:0;
+  margin: 0;
+}
+
+/* Bootstrap fix */
+
+.themed-container {
+   padding: 0 auto;
+   margin: 0 auto;
+}
+
+.container-fluid {
+    padding-right: 0; 
+    padding-left: 0;
+}
+
+nav.navbar {
+  border-bottom: 1px solid #214863;
+  border-top: 1px solid #214863;
+ 
+}
+
+a:link {
+  color: #4290c6;
+  text-decoration: none;
+}
+
+a.navbar-brand {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.75rem;
+  text-transform:uppercase;
+  color: #214863;
+}
+
+.navbar-brand a {
+  color: #214863;
+}
+
+.nav-item {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 1000;
+  vertical-align: bottom;
+  text-transform:uppercase;
+}
+
+ul.navbar-nav.me-auto {
+
+}
+
+a:link, a:link.nav-link, a:visited.nav-link {
+  color: #9AAF88;
+  text-decoration: none;
+  opacity: 1;
+}
+
+a:hover.nav-link {
+  color: #ED6A5A;
+  opacity: 0.5;
+}
+
+a.nav-link.active {
+  color: #ED6A5A;
+  opacity: 1;
 }
