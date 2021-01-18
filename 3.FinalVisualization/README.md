@@ -13,6 +13,10 @@ Source -  National Portrait Gallery, Smithsonian Institute.
 #### Visual Inspiration
 Salon Style Hanging 
 
+#### Questions to the Process 
+
+
+
 #### Mode: Intro, Salon, Size, Decade, Gender and Estate
 1. Intro  
 2. Salon - This shows the full view of the collection as a salon.
