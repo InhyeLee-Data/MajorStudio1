@@ -14,8 +14,12 @@ Source -  National Portrait Gallery, Smithsonian Institute.
 Salon Style Hanging 
 
 #### Questions to the Process 
-
-
+<img src="https://raw.githubusercontent.com/InhyeLee-Data/MajorStudio1/master/3.FinalVisualization/Documentation/FaceValue_Process_1_inhyeLee.jpg" width ="800px">
+<img src="https://raw.githubusercontent.com/InhyeLee-Data/MajorStudio1/master/3.FinalVisualization/Documentation/FaceValue_Process_2_inhyeLee.jpg" width ="800px">
+<img src="https://raw.githubusercontent.com/InhyeLee-Data/MajorStudio1/master/3.FinalVisualization/Documentation/FaceValue_Process_3_inhyeLee.jpg" width ="800px">
+<img src="https://raw.githubusercontent.com/InhyeLee-Data/MajorStudio1/master/3.FinalVisualization/Documentation/FaceValue_Process_4_inhyeLee.jpg" width ="800px">
+<img src="https://raw.githubusercontent.com/InhyeLee-Data/MajorStudio1/master/3.FinalVisualization/Documentation/FaceValue_Process_5_inhyeLee.jpg" width ="800px">
+<img src="https://raw.githubusercontent.com/InhyeLee-Data/MajorStudio1/master/3.FinalVisualization/Documentation/FaceValue_Process_6_inhyeLee.jpg" width ="800px">
 
 #### Mode: Intro, Salon, Size, Decade, Gender and Estate
 1. Intro  
