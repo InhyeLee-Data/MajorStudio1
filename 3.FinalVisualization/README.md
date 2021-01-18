@@ -22,10 +22,11 @@ Salon Style Hanging
 6. Estate - A small statistical finding about the gender differene in the collection. 
 
 #### Images
-<img src="https://raw.githubusercontent.com/InhyeLee-Data/MajorStudio1/master/3.FinalVisualization/Documentation/FaceValue1.png" width ="800px">
-<img src="https://raw.githubusercontent.com/InhyeLee-Data/MajorStudio1/master/3.FinalVisualization/Documentation/FaceValue2.png" width ="800px">
-<img src="https://raw.githubusercontent.com/InhyeLee-Data/MajorStudio1/master/3.FinalVisualization/Documentation/FaceValue3.png" width ="800px">
-<img src="https://raw.githubusercontent.com/InhyeLee-Data/MajorStudio1/master/3.FinalVisualization/Documentation/FaceValue4.png" width ="800px">
+<img src="https://raw.githubusercontent.com/InhyeLee-Data/MajorStudio1/master/3.FinalVisualization/Documentation/1_faceValue_Intro.png" width ="800px">
+<img src="https://raw.githubusercontent.com/InhyeLee-Data/MajorStudio1/master/3.FinalVisualization/Documentation/2_faceValue_Salon.png" width ="800px">
+<img src="https://raw.githubusercontent.com/InhyeLee-Data/MajorStudio1/master/3.FinalVisualization/Documentation/4_faceValue_Decade.png" width ="800px">
+<img src="https://raw.githubusercontent.com/InhyeLee-Data/MajorStudio1/master/3.FinalVisualization/Documentation/5_faceValue_Gender.png" width ="800px">
+<img src="https://raw.githubusercontent.com/InhyeLee-Data/MajorStudio1/master/3.FinalVisualization/Documentation/6_faceValue_Estate.png" width ="800px">
 
 #### A Short Video of Interaction
-https://youtu.be/praiPTvO8uI 
+https://vimeo.com/501440781 
