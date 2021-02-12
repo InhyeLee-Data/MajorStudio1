@@ -13,7 +13,7 @@ Source -  National Portrait Gallery, Smithsonian Institute.
 #### Visual Inspiration
 Salon Style Hanging 
 
-#### Questions to the Process 
+#### Questions and Design Process 
 <img src="https://raw.githubusercontent.com/InhyeLee-Data/MajorStudio1/master/3.FinalVisualization/Documentation/FaceValue_Process_1_inhyeLee.jpg" width ="800px">
 <img src="https://raw.githubusercontent.com/InhyeLee-Data/MajorStudio1/master/3.FinalVisualization/Documentation/FaceValue_Process_2_inhyeLee.jpg" width ="800px">
 <img src="https://raw.githubusercontent.com/InhyeLee-Data/MajorStudio1/master/3.FinalVisualization/Documentation/FaceValue_Process_3_inhyeLee.jpg" width ="800px">
