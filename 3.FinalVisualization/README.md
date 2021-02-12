@@ -4,6 +4,7 @@
 The Face Value of Portraits visualizes the physical dimension of portraits at the National Portrait Gallery, with an interest in the gender difference in the collection. A few pre-curated salons are available, reflecting data about a portrait’s physical dimension, its year of completion (from 1710s to 1960s) and the gender being portrayed. The project started with a question whether a portrait – its existence and size – would signal a portrayed figure’s social status. The visualization method is inspired by salon-style-exhibitions where visitors can compare physicality of artworks in a single gallery space.
 
 #### Link: https://inhyelee-data.github.io/MajorStudio1/3.FinalVisualization/ 
+#### A Short Video of Interaction: https://vimeo.com/501440781 
 
 #### Data
 Source -  National Portrait Gallery, Smithsonian Institute.
@@ -35,6 +36,3 @@ Salon Style Hanging
 <img src="https://raw.githubusercontent.com/InhyeLee-Data/MajorStudio1/master/3.FinalVisualization/Documentation/4_faceValue_Decade.png" width ="800px">
 <img src="https://raw.githubusercontent.com/InhyeLee-Data/MajorStudio1/master/3.FinalVisualization/Documentation/5_faceValue_Gender.png" width ="800px">
 <img src="https://raw.githubusercontent.com/InhyeLee-Data/MajorStudio1/master/3.FinalVisualization/Documentation/6_faceValue_Estate.png" width ="800px">
-
-#### A Short Video of Interaction
-https://vimeo.com/501440781 
